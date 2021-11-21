@@ -341,7 +341,7 @@ body {
 /*----------------form-------------*/
 
 .form_section {
-    margin-top: 30px;
+    margin-top: 60px;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -351,7 +351,8 @@ body {
 
 .form_container {
     width: 904px;
-    padding-top: 40px;
+    height: 489px;
+    margin-top: 40px;
     display: flex;
     justify-content: center;
 }
@@ -368,3 +369,74 @@ form {
     width: 444px;
     height: 316.5px;
 }
+
+.input {
+    border-radius: 8px;
+    border: 1px solid #D1D1D1;
+    height: 38px;
+    width: 444px;
+    padding: 8px 12px;
+}
+
+.textarea {
+    height: 140px;
+}
+
+.input:focus {
+    border: 1px solid red;
+    box-shadow: 0 1px 6px #FF00004D;
+}
+
+.input::placeholder {
+    color: #B2B2B2;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.checkbox {
+
+}
+
+.checkbox_label {
+    cursor: pointer;
+    display: flex;
+}
+
+.checkbox span {
+    height: 60px;
+    flex-shrink: 0;
+    flex-basis: 60px;
+    border: 10px solid cornflowerblue;
+    cursor: pointer;
+    margin-right: 15px;
+    font: normal normal 300 10px/14px Open Sans;
+    color: #B2B2B2;
+}
+
+.checkbox_input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkbox_span {
+
+}
+
+.send_button {
+    height: 40px;
+    width: 142px;
+    box-shadow: 0 3px 6px #FF00004D;
+    border: 1px solid #FF0000;
+    border-radius: 40px;
+    color: red;
+    text-transform: uppercase;
+    background-color: white;
+    font: normal normal bold 14px/19px Nunito Sans;
+    align-self: flex-end;
+
+}
+
