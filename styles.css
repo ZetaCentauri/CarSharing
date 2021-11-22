@@ -72,7 +72,7 @@ body {
     position: relative;
 }
 
-.page-logo img {
+.logo img {
     padding: 10px;
 }
 .red-text {
@@ -158,7 +158,6 @@ body {
     font-weight: 700;
     text-decoration: none;
     border-radius: 33px;
-
 }
 
 .red_action_link {
@@ -208,7 +207,6 @@ body {
     justify-content: center;
     align-items: center;
     padding-top: 6px;
-
 }
 
 .section_title::before,
@@ -247,7 +245,6 @@ body {
     font-weight: 400;
     text-transform: uppercase;
     padding: 15px 0 15px 0;
-
 }
 
 .article_text {
@@ -290,7 +287,6 @@ body {
 }
 
 .service_container {
-
     width: 1088px;
     height: 643px;
     display: flex;
@@ -305,7 +301,6 @@ body {
     font-family: "Nunito Sans", sans-serif;
     color: white;
 
-
     display: flex;
     justify-content: center;
     align-items: center;
@@ -317,6 +312,7 @@ body {
     width: 170px;
     height: 170px;
 }
+
 .service_article_title {
     font-size: 19px;
     font-weight: 400;
@@ -326,7 +322,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-
 }
 
 .service_article_text {
@@ -393,27 +388,22 @@ form {
     font-size: 16px;
     font-weight: 400;
 }
-
-.checkbox {
-
-}
+/*----------checkbox------------*/
 
 .checkbox_label {
-    cursor: pointer;
-    display: flex;
-}
-
-.checkbox span {
     height: 60px;
     flex-shrink: 0;
     flex-basis: 60px;
-    border: 10px solid cornflowerblue;
     cursor: pointer;
     margin-right: 15px;
     font: normal normal 300 10px/14px Open Sans;
     color: #B2B2B2;
+    display: flex;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px
 }
-
+/* Hide the browser's default checkbox */
 .checkbox_input {
     position: absolute;
     opacity: 0;
@@ -421,10 +411,28 @@ form {
     height: 0;
     width: 0;
 }
-
-.checkbox_span {
-
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 22px;
+    width: 22px;
+    background-color: #FFF;
+    border: 1px solid #D1D1D1;
+    border-radius: 8px;
+    padding: 5px;
 }
+
+/*!* When the checkbox is checked, add a background *!*/
+.checkbox_input:checked ~ .checkmark {
+    background-image: url("images/Icon Check.svg");
+    background-size: auto;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+/*------------checkbox end----------*/
 
 .send_button {
     height: 40px;
@@ -440,3 +448,74 @@ form {
 
 }
 
+
+/*------------------footer--------------*/
+
+.footer {
+    background-color: #28272C;
+    margin-top: 70px;
+    height: 232px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.page-logo img {
+    padding: 10px;
+
+}
+
+.red-text {
+    color: red;
+}
+
+.footer_container {
+    width: 1088px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: 700;
+    font-family: "Nunito Sans", sans-serif;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+}
+
+
+.footer_container_info {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    font-family: 'Nunito sans', sans-serif;
+
+    height: 97px;
+    align-self: center ;
+}
+.footer_list {
+    display: flex;
+
+}
+
+.footer_list ul {
+    /*height: 97px;*/
+    /*width: 300px;*/
+
+    text-transform: uppercase;
+
+    font: normal normal bold 14px/19px Nunito Sans;
+    margin-right: 150px;
+}
+
+.footer_list ul li {
+    margin-top: 7px;
+}
+
+.copyright {
+    align-self: flex-end;
+    font-family: 'Nunito sans', sans-serif;
+}
